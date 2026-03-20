@@ -18,7 +18,6 @@ class SignupView(APIView):
         user_lastname = request.data.get("user_lastname")
         password = request.data.get("password")
         user_role = request.data.get("user_role")
-        user_image = request.data.get("user_image", None)
 
         if not user_login or not password:
             return Response(
